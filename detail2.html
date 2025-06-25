@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail_Page</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="ionicons/css/ionicons.min.css" rel="stylesheet"> -->
+    <!-- <link href="css/animate.min.css" rel="stylesheet"> -->
+    <!-- <link href="css/aos.css" rel="stylesheet"> -->
+    <!-- main style -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/detail.css" rel="stylesheet">
+	<!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu'> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+            </div>
+        </div>
+    </div>
+    <!-- ./Preloader -->
+
+    <!-- Detail 시작 -->
+    <div class="detail_wrap">
+        <!--상세페이지 헤더 시작-->
+        <div class="detail_header">
+            <a href="#" class="detail_header_text"><img src="./img/detail/header 르샤트라 타이틀.png"></a>
+        </div>
+        <!--상세페이지 헤더 끝-->
+        
+        <!--상세페이지 콘텐츠 시작-->
+        <div class="detail_content">
+            <!-- 좌측 이미지 시작 -->
+            <div class="detail_img_wrap">
+                <img class="detail_img" src="./img/detail/르샤트라 알프스크림_최종.jpg" width="840px">
+            </div>
+            <!-- 좌측 이미지 끝 -->
+
+            <!-- 우측 영역 시작-->
+            <div class="detail_info_wrap">
+                <div class="detail_info_area">
+                    <!-- 우측 이미지 시작 -->
+                    <img src="img/detail/알프스크림 상세 배너.jpg" width="400px">
+                    <!-- 우측 이미지 끝 -->
+
+                    <!-- 우측 상단 설명 시작 -->
+                    <div class="detail_info">
+                        <h3>[NEW] 르샤트라 알프스크림</h3>
+                        <h4><span class="detail_price"></span>원</h4>
+                        <p>원산지 : 프랑스 </p>
+                    </div>
+                    <!-- 우측 상단 설명 끝 -->
+
+                    <!-- 우측 선택 부분 시작 -->
+                    <div class="detail_info_table">
+                        <table>
+                            <tr>
+                                <th>
+                                    제품선택
+                                </th>
+                                <td>
+                                    <select class="detail_select">
+                                        <option value="">제품을 선택해주세요</option>
+                                        <option value="1">알프스크림 75ml</option>
+                                        <!-- <option value="2">오설록2</option> -->
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    수량
+                                </th>
+                                <td>
+                                    <div class="quantity-box">
+                                        <!-- <input type="number" id="counting" name="quantity" min="1" max="50" step="1" value="1"> -->
+                                        <button class="minus">-</button>
+                                        <input type="number" class="quantity-input" id="counting" value="1" min="1" max="50" readonly/>
+                                        <button class="plus">+</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- 우측 선택 부분 끝 -->
+
+                    <!-- 상품 합계 시작-->
+                    <div class="detail_info_total">
+                        <p>상품금액 합계</p>
+                        <p class="detail_total_price"><span class="detail_price"></span>원</p>
+                    </div>
+                    <!-- 상품 합계 끝-->
+
+                    <!-- 하단 버튼 시작 -->
+                    <div class="detail_info_btn">
+                        <button>장바구니</button>
+                        <button>구매하기</button>
+                    </div>
+                    <!-- 하단 버튼 끝-->
+
+                </div>
+            </div>
+            <!-- 우측 영역 끝-->
+        </div>
+        <!--상세페이지 콘텐츠 끝-->
+
+        <!--상세페이지 푸터 시작-->
+        <div class="detail_footer">
+            
+        </div>
+        <!--상세페이지 푸터 끝-->
+
+        <!-- 탑 버튼 -->
+        <div class="detail_top_button">
+            <span>↑</span>
+        </div>
+
+    </div>
+    <!-- Detail 끝 -->
+
+    
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!--  plugins  -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        //  $('#counting').on('input', function () {
+        //     const value = parseFloat($(this).val());
+
+        //     if (!isNaN(value) && value <= 0) {
+        //     alert('수량은 1 이상이어야 합니다.');
+        //     $(this).val(1); // 잘못된 값이면 다시 1로 되돌림 (필요에 따라 제거 가능)
+        //     }
+        //     if (value > 50) {
+        //     alert('수량은 50개 미만이어야 합니다.');
+        //     $(this).val(1); // 잘못된 값이면 다시 1로 되돌림 (필요에 따라 제거 가능)
+        //     }
+        // });
+
+        // 여기서 금액 설정
+        var price= 11000;
+        
+        $(document).ready(function () {
+            $('.detail_price').text((parseInt(price).toLocaleString('ko-KR')));
+
+            $('.detail_top_button').on('click', function () {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            });
+
+        });
+
+
+        $('.plus').on('click', function () {
+            const $input = $(this).siblings('.quantity-input');
+            let val = parseInt($input.val()) || 1;
+            $input.val(val + 1);
+
+            if (val >  49) {
+                $input.val(val - 1);
+                alert("수량은 50개를 초과할 수 없습니다.");
+                $input.val(50);
+            }
+
+            const value = parseFloat($('#counting').val());
+            $('.detail_total_price').text((parseInt(value)*price).toLocaleString('ko-KR') + "원");
+        });
+        
+        $('.minus').on('click', function () {
+            const $input = $(this).siblings('.quantity-input');
+            let val = parseInt($input.val()) || 1;
+            if (val > 1) {
+                $input.val(val - 1);
+            } else {
+                alert("수량은 1 이상이어야 합니다.");
+                $input.val(1);
+            }
+
+            const value = parseFloat($('#counting').val());
+            $('.detail_total_price').text((parseInt(value)*price).toLocaleString('ko-KR') + "원");
+        });
+
+    </script>
+
+    <!--  main script  -->
+    <!-- <script src="js/custom.js"></script> -->
+
+</body>
+</html>

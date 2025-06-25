@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.detail_header{
+    width: 100%;
+    padding: 20px 0;
+    height: auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.detail_header_text{
+    margin:0 auto;
+    text-decoration: none;
+    color: black;
+}
+
+.detail_content{
+    width: 1320px;
+    margin: 30px auto 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.detail_img_wrap{
+    width: 840px;
+    /* background-image: url(../img/detail/오설록.jpg); */
+    /* background-size: cover; */
+    height: auto;
+}
+
+.detail_info_wrap{
+    width: 400px;
+    height: 800px;
+    position: sticky;
+    top: 35px;
+}
+
+.detail_info>h4{
+    margin-top: 20px;
+}
+
+.detail_info>p{
+    margin-bottom: 20px;
+}
+
+.detail_info{
+    border-bottom: 1px solid gray;
+}
+
+.detail_info_table>table{
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.detail_select{
+    width: 100%;
+    padding: 10px;  
+}
+
+.detail_info_table table th{
+    padding: 10px 0;
+    padding-right: 20px; 
+    width: 70px; 
+}
+.detail_info_table table td{
+    padding: 10px 0;  
+}
+
+#counting{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.quantity-box {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.quantity-box button {
+  width: 130px;
+  border: none;
+  background: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity-input {
+  width: 100px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid rgb(196, 196, 196);
+  border-right: 1px solid rgb(196, 196, 196);
+  font-weight: bold;
+  appearance: textfield; /* 브라우저 기본 ▲▼ 제거 */
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.detail_info_total{
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 0px;
+}
+
+.detail_info_total p:nth-child(1){
+    font-size: 22px;
+}
+
+.detail_info_total p:nth-child(2){
+    font-size: 28px;
+}
+
+.detail_info_btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.detail_info_btn button{
+    width: 50%;
+    border: 1px solid #1c6655;
+    padding: 20px 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.detail_info_btn button:nth-child(1){
+    border-right: 0px;
+    background-color: rgb(39, 39, 39);
+    
+}
+
+.detail_info_btn button:nth-child(2){
+    background-color:#1c6655
+}
+
+.detail_footer{
+    height: 105px;
+    border-top: 1px solid lightgray;
+}
+
+.detail_wrap{
+    position: relative;
+}
+
+.detail_top_button{
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(112, 112, 112, 0.6);
+    text-align: center;
+    cursor:pointer;
+    border: none;
+}
+
+.detail_top_button span{
+    font-size: 32px;
+    color: white;
+}
